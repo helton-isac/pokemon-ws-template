@@ -5,6 +5,7 @@ import br.com.heiderlopes.pokemonwstemplate.api.AuthInterceptor
 import br.com.heiderlopes.pokemonwstemplate.api.PokemonService
 import br.com.heiderlopes.pokemonwstemplate.repository.PokemonRepository
 import br.com.heiderlopes.pokemonwstemplate.repository.PokemonRepositoryImpl
+import br.com.heiderlopes.pokemonwstemplate.view.list.ListPokemonsViewModel
 import br.com.heiderlopes.pokemonwstemplate.view.splash.SplashViewModel
 import com.facebook.stetho.okhttp3.StethoInterceptor
 import com.squareup.picasso.OkHttp3Downloader
@@ -35,6 +36,9 @@ private fun createOkhttpClientAuth(authInterceptor: Interceptor): OkHttpClient {
 val viewModelModule = module {
     viewModel {
         SplashViewModel(get())
+    }
+    viewModel {
+        ListPokemonsViewModel(get())
     }
 }
 val repositoryModule = module {

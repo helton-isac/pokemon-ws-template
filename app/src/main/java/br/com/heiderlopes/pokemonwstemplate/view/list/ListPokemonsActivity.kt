@@ -10,6 +10,7 @@ import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.GridLayoutManager
 import br.com.heiderlopes.pokemonwstemplate.R
 import br.com.heiderlopes.pokemonwstemplate.view.form.FormPokemonActivity
+import br.com.heiderlopes.pokemonwstemplate.view.splash.SplashViewModel
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_list_pokemons.*
 import kotlinx.android.synthetic.main.include_loading.*
