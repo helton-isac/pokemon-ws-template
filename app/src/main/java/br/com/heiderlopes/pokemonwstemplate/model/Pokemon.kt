@@ -13,5 +13,17 @@ data class Pokemon(
     val nome: String,
 
     @SerializedName("imageURL")
-    val urlImagem: String
+    val urlImagem: String,
+
+    @SerializedName("attack")
+    var attack: Int,
+
+    @SerializedName("defense")
+    var defense: Int,
+
+    @SerializedName("ps")
+    var ps: Int,
+
+    @SerializedName("velocity")
+    var velocity: Int
 ) : Parcelable
