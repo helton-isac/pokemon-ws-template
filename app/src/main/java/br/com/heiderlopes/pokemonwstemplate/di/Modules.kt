@@ -5,6 +5,7 @@ import br.com.heiderlopes.pokemonwstemplate.api.AuthInterceptor
 import br.com.heiderlopes.pokemonwstemplate.api.PokemonService
 import br.com.heiderlopes.pokemonwstemplate.repository.PokemonRepository
 import br.com.heiderlopes.pokemonwstemplate.repository.PokemonRepositoryImpl
+import br.com.heiderlopes.pokemonwstemplate.view.detail.DetailViewModel
 import br.com.heiderlopes.pokemonwstemplate.view.form.FormPokemonViewModel
 import br.com.heiderlopes.pokemonwstemplate.view.list.ListPokemonsViewModel
 import br.com.heiderlopes.pokemonwstemplate.view.splash.SplashViewModel
@@ -44,7 +45,9 @@ val viewModelModule = module {
     viewModel {
         FormPokemonViewModel(get())
     }
-
+    viewModel {
+        DetailViewModel(get())
+    }
 }
 val repositoryModule = module {
     single<PokemonRepository> {
