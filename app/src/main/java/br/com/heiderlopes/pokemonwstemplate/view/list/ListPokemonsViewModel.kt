@@ -9,7 +9,6 @@ class ListPokemonsViewModel(val pokemonRepository: PokemonRepository) : ViewMode
 
     val messageError: MutableLiveData<String> = MutableLiveData()
     val pokemons: MutableLiveData<List<Pokemon>> = MutableLiveData()
-
     val isLoading: MutableLiveData<Boolean> = MutableLiveData()
 
     fun getPokemons() {
