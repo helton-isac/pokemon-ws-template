@@ -28,10 +28,10 @@ class DetailActivity : AppCompatActivity() {
             tvPokemonName.text = "${it.numero} ${it.nome}"
 
         })
-//        detailViewModel.messageError.observe(this, Observer {
-//            if(it != "")
-//                Toast.makeText(this, it, Toast.LENGTH_LONG).show()
-//        })
+        detailViewModel.messageError.observe(this, Observer {
+            if(it != "")
+                Toast.makeText(this, it, Toast.LENGTH_LONG).show()
+        })
 
         detailViewModel.isLoading.observe(this, Observer{
             if(it == true) {

@@ -11,6 +11,8 @@ class DetailViewModel(
 
     val isLoading = MutableLiveData<Boolean>()
     val pokemon = MutableLiveData<Pokemon>()
+    val messageError: MutableLiveData<String> = MutableLiveData()
+
     fun getPokemon(number: String) {
         isLoading.value = true
         pokemonRepository.getPokemon(
