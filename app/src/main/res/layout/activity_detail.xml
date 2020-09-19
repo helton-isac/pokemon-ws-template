@@ -142,4 +142,6 @@
                 app:layout_constraintGuide_percent="0.04"
                 android:orientation="vertical"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include layout="@layout/include_loading"/>
 </FrameLayout>
